@@ -1,0 +1,67 @@
+n = 0
+i = 0
+flag = 0
+n = 17
+i = 2
+L0: 
+T0 = i < n   
+T1 = not T0
+if T1 goto L1
+goto L2
+L3: 
+T2 = i + 1
+i = T2
+goto L0 
+L2: 
+T3 = n - i
+t1 = T3
+T4 = n / i
+t2 = T4
+T5 = t1 * t2
+t3 = T5
+T6 = x  = = n
+T7 = not T6
+if T7 goto L4
+flag = 1
+goto L5
+L4: 
+flag = 0
+L5: 
+goto L6 
+L1: 
+Input accepted.
+Parsing Complete
+---------------------Quadruples-------------------------
+
+Operator 	 Arg1 		 Arg2 		 Result 
+=        	 0        	 (null)   	 n      
+=        	 0        	 (null)   	 i      
+=        	 0        	 (null)   	 flag   
+=        	 17       	 (null)   	 n      
+=        	 2        	 (null)   	 i      
+Label    	 (null)   	 (null)   	 L0     
+<        	 i        	 n        	 T0     
+not      	 T0       	 (null)   	 T1     
+if       	 T1       	 (null)   	 L1     
+goto     	 (null)   	 (null)   	 L2     
+Label    	 (null)   	 (null)   	 L3     
++        	 i        	 1        	 T2     
+=        	 T2       	 (null)   	 i      
+goto     	 (null)   	 (null)   	 L0     
+Label    	 (null)   	 (null)   	 L2     
+-        	 n        	 i        	 T3     
+=        	 T3       	 (null)   	 t1     
+/        	 n        	 i        	 T4     
+=        	 T4       	 (null)   	 t2     
+*        	 t1       	 t2       	 T5     
+=        	 T5       	 (null)   	 t3     
+==       	 x        	 n        	 T6     
+not      	 T6       	 (null)   	 T7     
+if       	 T7       	 (null)   	 L4     
+=        	 1        	 (null)   	 flag   
+goto     	 (null)   	 (null)   	 L5     
+Label    	 (null)   	 (null)   	 L4     
+=        	 0        	 (null)   	 flag   
+Label    	 (null)   	 (null)   	 L5     
+goto     	 (null)   	 (null)   	 L6     
+Label    	 (null)   	 (null)   	 L1     
